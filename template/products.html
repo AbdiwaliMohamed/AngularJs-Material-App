@@ -1,0 +1,58 @@
+
+<md-dialog aria-label="Mango (Fruit)" style="width: 40%" id="left">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2 style="text-align: center">
+                    Product Description
+
+                </h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon md-svg-src="img/2.jpg" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content row">
+                <div class="col-4">
+                    <img style="margin: auto; max-width: 80%;padding: 5px" alt="Lush mango tree" ng-src="{{selected.img}}">
+                    <img style="margin: auto; max-width: 80%;padding: 5px" alt="Lush mango tree" ng-src="{{selected.img1}}">
+
+
+                </div>
+                <div class="col-8">
+                    <table class="table">
+                        <thead class="row" style="background-color:tomato;text-align: center; font-weight: bold; font-size: 40px">
+                        <tr style="" >
+                            <th scope="col" class="col-2">NAME</th>
+                            <th scope="col" class="col-2">PRICE</th>
+                            <th scope="col" class="col-2">Quantity</th>
+                            <th scope="col" class="col-6">Descriptions</th>
+                        </tr>
+                        </thead>
+                        <tbody class="row" >
+                        <tr style="">
+                            <td class="col-2"  >{{selected.name}}</td>
+                            <td class="col-2">{{selected.price}}</td>
+                            <td class="col-2">{{selected.quan}}</td>
+                            <td class="col-6">{{selected.desc}}</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+            </div>
+        </md-dialog-content>
+        <md-dialog-actions layout="row">
+            <md-button ng-click="answer('useful')" class="md-primary text" >
+                Order Now
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
+

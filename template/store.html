@@ -1,0 +1,540 @@
+
+
+<!-- Start your project here-->
+<div class="container-fluid">
+    <div class="row container-fluid wow fadeInUp" style="margin-top: 20px">
+        <div class="col-md-4  overlay zoom">
+            <img src="img/p2.jpg" alt="thumbnail" class="img-thumbnail" style="width: 100%"
+                 style="width: 200px">
+
+        </div>
+        <div class="col-md-4  overlay zoom">
+            <img src="img/new4.jpg" alt="thumbnail" class="img-thumbnail" style="width: 100%"
+                 style="width: 200px">
+        </div>
+        <div class="col-md-4  overlay zoom">
+            <img src="img/men11.jpg" alt="thumbnail" class="img-thumbnail" style="width: 100%"
+                 style="width: 200px">
+        </div>
+    </div>
+
+    <!-- Hoverable -->
+    <div class="container-fluid" style="margin-top: 30px">
+        <div class="row">
+            <div class="col-md-2"  ng-init="collection='block';fashion='none';footwear='none';electronics='none'">
+                <h1 style="text-align: center; font-weight: bold">Filter Products</h1>
+
+                <!--Accordion wrapper-->
+                <div ng-init="display='{{collection}}'">
+                    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true" style="display:{{collection}}">
+
+                    <!-- Accordion card -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingOne1">
+                            <a  ng-click="$event.preventDefault();" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                               aria-controls="collapseOne1">
+                                <h5 class="mb-0">
+                                    Filter By Price <i class="fas fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                             data-parent="#accordionEx">
+                            <div class="card-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item" ng-click="$event.preventDefault();min1=100;max1=30000000">All Product</a>
+                                    <a href="#" class="list-group-item" ng-click="$event.preventDefault();min1=3500;max1=4000">3000-4000</a>
+                                    <a href="#" class="list-group-item" ng-click="$event.preventDefault();min1=5000;max1=6000">5000-6000</a>
+                                    <a href="#" class="list-group-item" ng-click="$event.preventDefault();min1=7000;max1=8000">7000-8000</a>
+                                    <a href="#" class="list-group-item" ng-click="$event.preventDefault();min1=9000;max1=10000">9000-10000</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingThree3">
+                            <a  ng-click="$event.preventDefault();" class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                               aria-expanded="false" aria-controls="collapseThree3">
+                                <h5 class="mb-0">
+                                    Filter By Name <i class="fas fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                             data-parent="#accordionEx">
+                            <div class="card-body">
+                                <div class="list-group">
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='T-shirt'">T-shirt</a>
+                                    <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='shirt'">shirt</a>
+                                    <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Footwear'">Footwear</a>
+                                    <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='jackets'">jackets</a>
+                                    <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Techno'">Techno</a>
+                                    <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Samsung'">Samsung</a>
+                                    <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Sport wear'">Sport Wear</a>
+                                    <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Sonny'">Sonny</a>
+                                    <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='suit'">suit</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Accordion card -->
+
+                </div>
+                    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true" style="display:{{footwear}}">
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingOne1">
+                                <a  ng-click="$event.preventDefault();" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                                   aria-controls="collapseOne1">
+                                    <h5 class="mb-0">
+                                        Filter By Price <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                 data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min3=100;max3=30000000">All Footwear</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min3=100;max3=3000">1000-3000</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min3=3500;max3=4000">3000-4000</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min3=5000;max3=6000">5000-6000</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min3=7000;max3=8000">7000-8000</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min3=9000;max3=10000">9000-10000</a>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingThree3">
+                                <a  ng-click="$event.preventDefault();" class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                                   aria-expanded="false" aria-controls="collapseThree3">
+                                    <h5 class="mb-0">
+                                        Filter By Name <i class="fas fa-angle-down rotate-icon" ng-click="$event.preventDefault();"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                                 data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="list-group">
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Classic Wear'">Classic</a>
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='open wear'">Open</a>
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='football'">football</a>
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Sport wear'">Sports</a>
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='modern wear'">Modern</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                    </div>
+                    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true" style="display:{{electronics}}">
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingOne1">
+                                <a  ng-click="$event.preventDefault();" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                                   aria-controls="collapseOne1">
+                                    <h5 class="mb-0">
+                                        Filter By Price <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                 data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min=100;max=30000000">All Electronics</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min=100;max=3000">1000-3000</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min=3500;max=4000">3000-4000</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min=5000;max=6000">5000-6000</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min=7000;max=8000">7000-8000</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min=9000;max=10000">9000-10000</a>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingThree3">
+                                <a  ng-click="$event.preventDefault();" class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                                   aria-expanded="false" aria-controls="collapseThree3">
+                                    <h5 class="mb-0">
+                                        Filter By Name <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                                 data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="list-group">
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Samsung'">Samsung</a>
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='techno'">Techno</a>
+                                           <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Huawei'">Huawei</a>
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Lg prime'">LG</a>
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Apple'">iphone</a>
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Apple'">Apple</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                    </div>
+                    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true" style="display:{{fashion}}">
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingOne1">
+                                <a  ng-click="$event.preventDefault();" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                                   aria-controls="collapseOne1">
+                                    <h5 class="mb-0">
+                                        Filter By Price <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                 data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min2=100;max2=30000000">All Fashions</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min2=100;max2=3000">1000-3000</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min2=3500;max2=4000">3000-4000</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min2=5000;max2=6000">5000-6000</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min2=7000;max2=8000">7000-8000</a>
+                                        <a href="#" class="list-group-item" ng-click="$event.preventDefault();min2=9000;max2=10000">9000-10000</a>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingThree3">
+                                <a  ng-click="$event.preventDefault();" class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                                   aria-expanded="false" aria-controls="collapseThree3">
+                                    <h5 class="mb-0">
+                                        Filter By Name <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                                 data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="list-group">
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='T-shirt'">T-shirt</a>
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='shirt'">shirt</a>
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='Tops'">Tops</a>
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='jackets'">jackets</a>
+                                        <a href="" class="list-group-item" ng-click="$event.preventDefault(); name='suit'">suit</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                    </div>
+
+            </div>
+            </div>
+
+            <div class="col-md-10">
+                            <h1 style="text-align: center; font-weight: bold">Our Products</h1>
+                            <!-- Classic tabs -->
+                            <!-- Classic tabs -->
+                            <div class="classic-tabs">
+
+                                <ul class="nav tabs-cyan" id="myClassicTab" role="tablist" style="border: solid 1px black">
+                                    <li class="nav-item">
+                                        <a class="nav-link  waves-light active show" id="profile-tab-classic" data-toggle="tab" href="#profile-classic"
+                                           role="tab" aria-controls="profile-classic" aria-selected="true" ng-click="$event.preventDefault();selectedTab='Collections'; fashion='none';electronics='none';footwear='none';collection='block'"   style="font-size: 24px;">Collections</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link waves-light" id="follow-tab-classic" data-toggle="tab" href="#follow-classic" role="tab"
+                                           aria-controls="follow-classic" aria-selected="false" style="font-size: 24px;" ng-click="$event.preventDefault();selectedTab='fashions'; fashion='block';electronics='none';footwear='none';collection='none'">Fashion</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link waves-light" id="contact-tab-classic" data-toggle="tab" href="#contact-classic" role="tab"
+                                           aria-controls="contact-classic" aria-selected="false" style="font-size: 24px;" ng-click="$event.preventDefault();selectedTab='footwears'; fashion='none';electronics='none';footwear='block';collection='none'">Footwear</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link waves-light" id="awesome-tab-classic" data-toggle="tab" href="#awesome-classic" role="tab"
+                                           aria-controls="awesome-classic" aria-selected="false" style="font-size: 24px;" ng-click="$event.preventDefault();selectedTab='mobiles'; fashion='none';electronics='block';footwear='none';collection='none'">Electronics</a>
+                                    </li>
+                                    <form class="form-inline" style="font-size: 10px; margin-left: 30px ">
+                                        <div class="md-form my-0">
+                                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" ng-model="y" style="font-size: 20px">
+                                        </div>
+                                    </form>
+
+                                </ul>
+                                <div class="tab-content border-right border-bottom border-left rounded-bottom" id="myClassicTabContent" style="margin:-30px;">
+                                    <div class="tab-pane fade active show" id="profile-classic" role="tabpanel" aria-labelledby="profile-tab-classic">
+                                        <div class="row" style="margin-top: 70px">
+                                            <div class="col-md-3" style="margin-bottom: 30px" ng-repeat="Collection in Collections| filter1:min1:max1|filter:y|filter:x|filter :{name:name}">
+                                                <!-- Card -->
+
+                                                <div class="card">
+
+                                                    <!-- Card image -->
+                                                    <div class=" overlay zoom ">
+                                                        <img class="card-img-top " ng-src="{{Collection.img}}" style="width: 100%; height: 100%; ">
+                                                        <a href="#!">
+                                                            <div class="mask rgba-white-slight"></div>
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Card content -->
+                                                    <div class="card-body" style="text-align: center;background-color: #eeeeee;color: #090909">
+
+                                                        <!-- Title -->
+                                                        <h4 class="card-title alt='{{Collection.price}}'">
+                                                            ${{Collection.price}}
+                                                        </h4>
+                                                        <h4 class="card-title alt='{{Collection.Name}}'">
+                                                            {{Collection.name}}
+                                                        </h4>
+                                                        <p>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        </p>
+                                                        <!-- Text -->
+                                                        <!-- Button -->
+                                                        <md-button class="md-primary md-raised" ng-click="showAdvanced($event,Collection)" style="display: inline; background-color: tomato">Description</md-button>
+                                                        <md-button class="md-primary md-raised" ng-click="showAdvanced($event,Collection)" style="display: inline">Buy Now</md-button>
+
+
+                                                    </div>
+
+                                                </div>
+                                                <!-- Card -->
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="follow-classic" role="tabpanel" aria-labelledby="follow-tab-classic">
+                                        <div class="row" style="margin-top: 70px">
+                                            <div class="col-md-3" style="margin-bottom: 100px" ng-repeat="fashion in fashions|filter2:min2:max2|filter:x|filter :{name:name}">
+                                                <!-- Card -->
+
+                                                <div class="card">
+
+                                                    <!-- Card image -->
+                                                    <div class=" overlay zoom ">
+                                                        <img class="card-img-top " ng-src="{{fashion.img}}" style="width: 100%; height: 100%; ">
+                                                        <a href="#!">
+                                                            <div class="mask rgba-white-slight"></div>
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Card content -->
+                                                    <div class="card-body" style="text-align: center;background-color: #eeeeee;color: #090909">
+                                                        <h4 class="card-title alt='{{fashion.price}}'">
+                                                            ${{fashion.price}}
+                                                        </h4>
+                                                        <!-- Title -->
+                                                        <h4 class="card-title alt='{{fashion.Name}}'">
+                                                            {{fashion.name}}
+                                                        </h4>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <!-- Text -->
+                                                        <!-- Button -->
+                                                        <md-button class="md-primary md-raised" ng-click="showAdvanced($event,fashion);" style="display: inline; background-color: tomato">Description</md-button>
+                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+
+                                                    </div>
+
+                                                </div>
+                                                <!-- Card -->
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="contact-classic" role="tabpanel" aria-labelledby="contact-tab-classic">
+                                        <div class="row" style="margin-top: 70px">
+                                            <div class="col-md-3" style="margin-bottom: 100px" ng-repeat="footwear in footwears|filter3:min3:max3|filter:x|filter :{name:name}">
+                                                <!-- Card -->
+
+                                                <div class="card" >
+
+                                                    <!-- Card image -->
+                                                    <div class="  overlay zoom">
+                                                        <img class="card-img-top " ng-src="{{footwear.img}}" style="width: 100%; height: 100%; ">
+                                                        <a href="#!">
+                                                            <div class="mask rgba-white-slight"></div>
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Card content -->
+                                                    <div class="card-body" style="text-align: center;background-color: #eeeeee;color: #090909">
+                                                        <h4 class="card-title alt='{{footwear.price}}'">
+                                                            ${{footwear.price}}
+                                                        </h4>
+                                                        <!-- Title -->
+                                                        <h4 class="card-title alt='{{footwear.Name}}'">
+                                                            {{footwear.name}}
+                                                        </h4>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <!-- Text -->
+                                                        <!-- Button -->
+                                                        <md-button class="md-primary md-raised" ng-click="showAdvanced($event,footwear)" style="display: inline; background-color: tomato">Description</md-button>
+                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+
+                                                    </div>
+
+                                                </div>
+                                                <!-- Card -->
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="awesome-classic" role="tabpanel" aria-labelledby="awesome-tab-classic">
+                                        <div class="row" style="margin-top: 70px">
+                                            <div class="col-md-3" style="margin-bottom: 100px" ng-repeat="mobile in mobiles|filter4:min:max|filter:x|filter :{name:name}">
+                                                <!-- Card -->
+
+                                                <div class="card">
+
+                                                    <!-- Card image -->
+                                                    <div class=" overlay zoom ">
+                                                        <img class="card-img-top " ng-src="{{mobile.img}}" style="width: 100%; height: 100%; ">
+                                                        <a href="#!">
+                                                            <div class="mask rgba-white-slight"></div>
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Card content -->
+                                                    <div class="card-body" style="text-align: center;background-color: #eeeeee;color: #090909">
+                                                        <h4 class="card-title alt='{{mobile.price}}'">
+                                                            ${{mobile.price}}
+                                                        </h4>
+                                                        <!-- Title -->
+                                                        <h4 class="card-title alt='{{mobile.Name}}'">
+                                                            {{mobile.name}}
+                                                        </h4>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <!-- Text -->
+                                                        <!-- Button -->
+                                                        <md-button class="md-primary md-raised" ng-click="showAdvanced($event,mobile)" style="display: inline; background-color: tomato">Description</md-button>
+                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+
+                                                    </div>
+
+                                                </div>
+                                                <!-- Card -->
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                                <!-- Classic tabs -->
+
+
+                            </div>
+                            <!-- Classic tabs -->
+                        </div>
+    </div>
+    </div>
+
+
+
+
+
+</div>
+
+<!-- End your project here-->
+
+<
+<script>
+    $( document ).ready(function() {
+        new WOW().init();
+    });
+</script>
+

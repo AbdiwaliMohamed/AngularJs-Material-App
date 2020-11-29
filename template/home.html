@@ -1,0 +1,240 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>smart store</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-mds.js"></script>
+    <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="js/angular-animate.js"></script>
+    <script type="text/javascript" src="js/angular-sanitize.js"></script>
+    <script type="text/javascript" src="js/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script type="text/javascript" src="js/App.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+
+
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            new WOW().init();
+        });
+        // MDB Lightbox Init
+        $(function () {
+            $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+        });
+    </script>
+</head>
+<div class="">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner"  style="height:550px">
+        <div class="carousel-item  {{$event.preventDefault();actives==0? 'active':''}}">
+            <img class="d-block w-100" src="img/2.jpg"
+                 alt="First slide">
+        </div>
+        <div class="carousel-item {{$event.preventDefault();actives==1? 'active':''}}">
+            <img class="d-block w-100" src="img/4.jpg"
+                 alt="Second slide">
+        </div>
+        <div class="carousel-item {{$event.preventDefault();actives==2? 'active':''}}">
+            <img class="d-block w-100" src="img/8.jpg"
+                 alt="Third slide">
+        </div>
+    </div>
+    <a ng-click="$event.preventDefault();" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a ng-click="$event.preventDefault();" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>    <!-- Footer -->
+<!--Carousel Wrapper-->
+<h2 class="font-weight-bold my-5 text-center">Our Services</h2>
+<!--First row-->
+<div class="row wow wow fadeInUp">
+
+    <!--First column-->
+    <div class="col-md-12">
+
+        <div id="mdb-lightbox-ui"></div>
+
+        <!--Full width lightbox-->
+        <div class="mdb-lightbox">
+            <div class="row">
+                <figure class="col-md-4  overlay zoom">
+                    <a href="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(63).jpg" data-size="1600x1067">
+                        <img src="img/ba3.jpg" style="" class="img-fluid z-depth-1">
+                    </a>
+                    <div class="card">
+                        <div class="card-body" style="text-align: center">
+
+                            <!-- Title -->
+                            <h4 class="card-title">Online Marketing</h4>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <!-- Button -->
+
+                        </div>
+                    </div>
+
+                </figure>
+
+                <figure class="col-md-4  overlay zoom">
+                    <a href="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(66).jpg" data-size="1600x1067">
+                        <img src="img/ba2.jpg" style="width:100%" class="img-fluid z-depth-1">
+                    </a>
+                    <div class="card ">
+                        <div class="card-body" style="text-align: center">
+
+                            <!-- Title -->
+                            <h4 class="card-title">Women's Online Shopping</h4>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <!-- Button -->
+
+                        </div>
+                    </div>
+
+                </figure>
+                <figure class="col-md-4  overlay zoom">
+                    <a href="" data-size="1600x1067">
+                        <img src="img/ba1.jpg" class="img-fluid z-depth-1">
+                    </a>
+                    <div class="card">
+                        <div class="card-body" style="text-align: center">
+
+                            <!-- Title -->
+                            <h4 class="card-title">men's Online Shopping</h4>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <!-- Button -->
+
+                        </div>
+                    </div>
+
+                </figure>
+
+            </div>
+
+
+
+
+        </div>
+        <!--/Full width lightbox-->
+
+    </div>
+    <!--/First column-->
+
+</div>
+<!--First row-->
+<h2 class="font-weight-bold my-5 text-center">Features</h2>
+<div class="container">
+    <div class="row wow fadeInUp">
+        <div class="col-lg-3 overlay zoom ">
+            <img src="img/d2.jpg"  style="width:120px">
+            <h2>50% Off</h2>
+        </div>
+        <div class="col-lg-3 overlay zoom">
+            <img src="img/d4.jpg" style="width:60%;">
+            <h2>Faster Delivery</h2>
+
+        </div>
+        <div class="col-lg-3 overlay zoom">
+            <img src="img/24.png" style="width:50%">
+            <h2 style="margin-left: 30px">24/7</h2>
+
+        </div>
+        <div class="col-lg-3 overlay zoom">
+            <img src="img/cust.png" style="width:30%">
+            <h2 style="margin-right: 10px">Customer</h2>
+        </div>
+    </div>
+</div>
+<div class="container-fluid  " style="text-align: center">
+    <h2 class="font-weight-bold my-5 text-center">
+        Latest Products</h2>
+    <div class="row wow fadeInUp ">
+
+        <div class="col-xl-4  overlay zoom">
+            <!-- Card -->
+            <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/p2.jpg" style="width:100%" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+
+                    <!-- Title -->
+                    <a href="store.html" class="btn btn-primary" style="text-align: center">Shop Now</a>
+
+                </div>
+
+            </div>
+            <!-- Card -->
+        </div>
+        <div class="col-xl-4  overlay zoom">
+            <!-- Card -->
+            <div class="card overlay zoom">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/new4.jpg" style="width:95%" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body overlay zoom">
+
+                    <!-- Title -->
+                    <a href="store.html" class="btn btn-primary" style="text-align: center">Shop Now</a>
+
+                </div>
+
+            </div>
+            <!-- Card -->
+        </div>
+        <div class="col-xl-4  overlay zoom"><!-- Card -->
+            <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/men11.jpg" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+
+                    <!-- Title -->
+                    <a href="store.html" class="btn btn-primary" style="text-align: center">Shop Now</a>
+
+                </div>
+
+            </div>
+            <!-- Card --></div>
+    </div>
+</div>
+</div>
+
+
+
+

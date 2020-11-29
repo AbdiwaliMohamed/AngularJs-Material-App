@@ -1,0 +1,137 @@
+
+
+<!-- Start your project here-->
+<div class="container-fluid">
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner"  style="height:300px">
+            <div class="carousel-item active {{actives==0? 'active':''}}">
+                <img class="d-block w-100" src="img/1.jpg"
+                     alt="First slide">
+            </div>
+            <div class="carousel-item {{actives==1? 'active':''}}">
+                <img class="d-block w-100" src="img/2.jpg"
+                     alt="Second slide">
+            </div>
+            <div class="carousel-item {{actives==2? 'active':''}}">
+                <img class="d-block w-100" src="img/ba3.jpg"
+                     alt="Third slide">
+            </div>
+        </div>
+        <a ng-click="$event.preventDefault();" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a  ng-click="$event.preventDefault();" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>    <!-- Footer -->
+
+    <!--Section: Contact v.2-->
+    <!--Section: Contact v.1-->
+    <section class="section pb-5">
+
+        <!--Section heading-->
+        <h1 class="section-heading h1 pt-4" style="text-align: center">Contact us</h1>
+        <!--Section description-->
+
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-lg-5 mb-4">
+
+                <!--Form with header-->
+                <div class="card">
+
+                    <div class="card-body">
+                        <!--Header-->
+                        <div class="form-header blue accent-1">
+                            <h3><i class="fas fa-envelope"></i> Write to us:</h3>
+                        </div>
+
+                        <p>We'll write rarely, but with only the best content.</p>
+                        <br>
+
+                        <!--Body-->
+                        <div class="md-form">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="form-name" class="form-control">
+                            <label for="form-name">Your name</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="text" id="form-email" class="form-control">
+                            <label for="form-email">Your email</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-tag prefix grey-text"></i>
+                            <input type="text" id="form-Subject" class="form-control">
+                            <label for="form-Subject">Subject</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-pencil-alt prefix grey-text"></i>
+                            <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                            <label for="form-text">Icon Prefix</label>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button class="btn btn-light-blue">Submit</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Form with header-->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-7">
+
+                <!--Google map-->
+                <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 500px; width:100%">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.653612058928!2d32.55270331437082!3d15.556689089199354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e903670ea5cf7%3A0x9df419f9fd75505f!2sNasa%20Pharmacy!5e0!3m2!1sen!2s!4v1606306632663!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <br>
+                <!--Buttons-->
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1"><i class="fas fa-map-marker-alt"></i></a>
+                        <p>Khartoum</p>
+                        <p>Sudan</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1"><i class="fas fa-phone"></i></a>
+                        <p>+ 24912763-8689</p>
+                        <p>Mon - Fri, 8:00-22:00</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1"><i class="fas fa-envelope"></i></a>
+                        <p>info@gmail.com</p>
+                        <p>sale@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+
+    </section>
+    <!--Section: Contact v.1-->
+    <!--Google Maps-->
+
+
+    <!-- Footer -->
+
+</div>
+<!-- End your project here-->
+
