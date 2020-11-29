@@ -1,5 +1,5 @@
 
-<md-dialog aria-label="Mango (Fruit)" style="width: 40%" id="left">
+<md-dialog aria-label="Mango (Fruit)" style="width: 600px;height: 61%; text-align: center" id="left">
     <form ng-cloak>
         <md-toolbar>
             <div class="md-toolbar-tools">
@@ -15,16 +15,39 @@
         </md-toolbar>
 
         <md-dialog-content>
-            <div class="md-dialog-content row">
+            <div class="md-dialog-content row" style="margin-top: -23px;margin-right: 20px">
                 <div class="col-4">
-                    <img style="margin: auto; max-width: 80%;padding: 5px" alt="Lush mango tree" ng-src="{{selected.img}}">
-                    <img style="margin: auto; max-width: 80%;padding: 5px" alt="Lush mango tree" ng-src="{{selected.img1}}">
+                    <div  style="margin-top: 10px" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" >
+                            <div class="carousel-item  {{$event.preventDefault();actives==0? 'active':''}}">
+                                <img style="padding: 5px;width:100%;height:250px" class="d-block w-100"  ng-src="{{selected.img}}"
+                                     alt="First slide">
+                            </div>
+                            <div class="carousel-item {{$event.preventDefault();actives==1? 'active':''}}">
+                                <img style="margin: auto; padding: 5px;width:100%;height:250px" class="d-block w-100"  ng-src="{{selected.img1}}"
+                                     alt="Second slide">
+                            </div>
+                            <div class="carousel-item {{$event.preventDefault();actives==2? 'active':''}}">
+                                <img style="margin: auto; padding: 5px;width:100%;height:250px" class="d-block w-100"  ng-src="{{selected.img}}"
+                                     alt="Third slide">
+                            </div>
+                        </div>
+                        <a ng-click="$event.preventDefault();" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a ng-click="$event.preventDefault();" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>    <!-- Footer -->
+                 </div>
 
 
-                </div>
+
                 <div class="col-8">
                     <table class="table">
-                        <thead class="row" style="background-color:tomato;text-align: center; font-weight: bold; font-size: 40px">
+                        <thead class="row" style="background-color:tomato;text-align: center; font-weight: bolder; font-size: 50px">
                         <tr style="" >
                             <th scope="col" class="col-2">NAME</th>
                             <th scope="col" class="col-2">PRICE</th>
@@ -32,27 +55,24 @@
                             <th scope="col" class="col-6">Descriptions</th>
                         </tr>
                         </thead>
-                        <tbody class="row" >
+                        <tbody class="row"  style="background-color:#dcdcdc;text-align: center; font-weight: bolder; font-size: 40px">
                         <tr style="">
-                            <td class="col-2"  >{{selected.name}}</td>
-                            <td class="col-2">{{selected.price}}</td>
-                            <td class="col-2">{{selected.quan}}</td>
-                            <td class="col-6">{{selected.desc}}</td>
+                            <td class="col-2" style="text-align: left;font-weight: bolder" >{{selected.name}}</td>
+                            <td class="col-2" style="text-align: left;font-weight: bolder">{{selected.price}}</td>
+                            <td class="col-2" style="text-align: left;font-weight: bolder">{{selected.quan}}</td>
+                            <td class="col-6" style="text-align: left;font-weight: bolder">{{selected.desc}}</td>
 
                         </tr>
+
                         </tbody>
                     </table>
 
 
                 </div>
+                <md-button class="md-primary md-raised" ng-click="Cart()" style="display: inline; background-color: #360eff;margin-top: -13px;margin-left: 50%">Order Now</md-button>
 
             </div>
         </md-dialog-content>
-        <md-dialog-actions layout="row">
-            <md-button ng-click="answer('useful')" class="md-primary text" >
-                Order Now
-            </md-button>
-        </md-dialog-actions>
     </form>
 </md-dialog>
 
