@@ -47,19 +47,29 @@ angular.module("myApp")
 
     ];
     $scope.footwears=[
-        {name:"open wear",price:18000,quan:2,img:"img/mw1.png"},
-        {name:"modern wear",price:3000,quan:9,img:"img/mw3.png"},
-        {name:"Classic Wear",price:9000,quan:8,img:"img/mw1.png"},
-        {name:"Sport wear",price:3000,quan:9,img:"img/d1.jpg"},
-        {name:"open wear",price:18000,quan:2,img:"img/mw1.png"},
-        {name:"Sport wear",price:18000,quan:2,img:"img/d1.jpg"},
-        {name:"modern wear",price:3000,quan:9,img:"img/mw3.png"},
-        {name:"Classic Wear",price:9000,quan:8,img:"img/mw1.png"},
-        {name:"Sport wear",price:3000,quan:9,img:"img/d1.jpg"},
-        {name:"open wear",price:18000,quan:2,img:"img/mw1.png"},
-        {name:"modern wear",price:3000,quan:9,img:"img/mw3.png"},
-        {name:"Classic Wear",price:9000,quan:8,img:"img/mw1.png"},
-        {name:"Sport wear",price:3000,quan:9,img:"img/d1.jpg"}
+        {name:"open wear",price:18000,quan:2,img:"img/mw1.png",
+            desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "},
+        {name:"modern wear",price:3000,quan:9,img:"img/mw3.png",
+            desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "},
+        {name:"Classic Wear",price:9000,quan:8,img:"img/mw1.png",
+            desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "},
+        {name:"Sport wear",price:3000,quan:9,img:"img/d1.jpg",
+            desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "},
+        {name:"open wear",price:18000,quan:2,img:"img/mw1.png",
+            desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "},
+        {name:"Sport wear",price:18000,quan:2,img:"img/d1.jpg",
+            desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "},
+        {name:"modern wear",price:3000,quan:9,img:"img/mw3.png",
+            desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "},
+        {name:"Classic Wear",price:9000,quan:8,img:"img/mw1.png",
+            desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "},
+        {name:"Sport wear",price:3000,quan:9,img:"img/d1.jpg",
+            desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "},
+        {name:"open wear",price:18000,quan:2,img:"img/mw1.png",
+            desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "},
+        {name:"modern wear",price:3000,quan:9,img:"img/mw3.png",desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "},
+        {name:"Classic Wear",price:9000,quan:8,img:"img/mw1.png",desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "},
+        {name:"Sport wear",price:3000,quan:9,img:"img/d1.jpg",desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "}
 
 
     ];
