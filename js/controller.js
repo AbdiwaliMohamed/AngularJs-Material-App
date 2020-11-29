@@ -164,6 +164,7 @@ angular.module("myApp")
             desc:"We have an interval that changes the color of the button from red to blue themes, Open the dialog to see the theme being inherited to the dialog and any component inside "}
 
         ]
+    $scope.basket=[];
     $scope.actives = 0
     $scope.active = 'active'
     $scope.animation = 'animated bounceOutLeft delay-1s'
@@ -180,6 +181,18 @@ angular.module("myApp")
 
 
     })
+        $scope.Cart =function () {
+            name=$scope.selected.name
+            img=$scope.selected.img
+            price=$scope.selected.price
+            var x=prompt("Enter the quantity of "+name)
+            if(x){
+                x=parseFloat(x)
+               $scope.basket.push({name:name,price:price,qty:x,img:img})
+                console.log(basket)
+            }
+        }
+
 
 
         function DialogController($scope, $mdDialog) {
@@ -193,7 +206,6 @@ angular.module("myApp")
         }
 
     }
-
     $interval(function () {
         if ($scope.actives < 2) {
             $scope.actives++
