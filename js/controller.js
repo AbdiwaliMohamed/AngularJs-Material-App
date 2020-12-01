@@ -197,13 +197,16 @@ angular.module("myApp")
                     price: price,
                     qty: x,
                     img: img
-                });
+                })
 
                     $rootScope.hidethis='fadeOutUp'
                     $timeout(function () {
                             $rootScope.hidethis='';
 
                     },3000)
+
+
+            }
 
 
 
@@ -229,7 +232,7 @@ angular.module("myApp")
 
 
 
-    }
+
     $scope.cancel = function () {
 
         $mdDialog.cancel()
