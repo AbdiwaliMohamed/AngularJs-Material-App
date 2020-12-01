@@ -203,7 +203,6 @@ angular.module("myApp")
                     $timeout(function () {
                             $rootScope.hidethis='';
 
-                   //  $mdDialog.cancel()
                     },3000)
 
 
@@ -227,18 +226,15 @@ angular.module("myApp")
         //         $mdDialog.hide();
         //     };
 
-            // $scope.cancel = function () {
-            // $rootScope.hidethis='fadeOutRight'
-            // $timeout(function () {
-            //     $rootScope.hidethis=''
-            // },3000)
-                    // $mdDialog.cancel()
-                //     .closeTo(angular.element(document.querySelector('#right')))
-            //
-            // };
+
 
 
     }
+    $scope.cancel = function () {
+
+        $mdDialog.cancel()
+
+    };
     $interval(function () {
         if ($scope.actives < 2) {
             $scope.actives++
