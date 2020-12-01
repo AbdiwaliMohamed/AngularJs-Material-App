@@ -170,40 +170,73 @@ angular.module("myApp")
     $scope.animation = 'animated bounceOutLeft delay-1s'
     $scope.showAdvanced = function(ev,product) {
         $scope.selected=product;
+        $rootScope.disp='block'
         $mdDialog.show({
             scope:$scope,
             preserveScope:true,
             templateUrl: 'template/products.html',
             parent: angular.element(document.body),
             targetEvent: ev,
-            clickOutsideToClose: true
+            clickOutsideToClose: true,
+
+
 
 
 
     })
+
         $scope.Cart =function () {
-            name=$scope.selected.name
-            img=$scope.selected.img
-            price=$scope.selected.price
-            var x=prompt("Enter the quantity of "+name)
-            if(x){
-                x=parseFloat(x)
-               $scope.basket.push({name:name,price:price,qty:x,img:img})
-                console.log(basket)
+            name = $scope.selected.name
+            img = $scope.selected.img
+            price = $scope.selected.price
+            var x = prompt("Enter the quantity of " + name)
+            if (x) {
+                x = parseFloat(x)
+                $scope.basket.push({
+                    name: name,
+                    price: price,
+                    qty: x,
+                    img: img
+                });
+
+                    $rootScope.hidethis='fadeOutUp'
+                    $timeout(function () {
+                            $rootScope.hidethis='';
+
+                   //  $mdDialog.cancel()
+                    },3000)
+
+
+
+
+
+
+
+
             }
-        }
+            }
 
 
 
-        function DialogController($scope, $mdDialog) {
-            $scope.hide = function () {
-                $mdDialog.hide();
-            };
 
-            $scope.cancel = function () {
-                $mdDialog.cancel();
-            };
-        }
+
+
+
+        //function DialogController($scope, $mdDialog) {
+        //     $scope.hide = function ($scope, $mdDialog) {
+        //         $mdDialog.hide();
+        //     };
+
+            // $scope.cancel = function () {
+            // $rootScope.hidethis='fadeOutRight'
+            // $timeout(function () {
+            //     $rootScope.hidethis=''
+            // },3000)
+                    // $mdDialog.cancel()
+                //     .closeTo(angular.element(document.querySelector('#right')))
+            //
+            // };
+
 
     }
     $interval(function () {
@@ -214,6 +247,7 @@ angular.module("myApp")
             $scope.actives = 0
         }
     }, 5000)
+
 })
     .controller("forumCtrl",function ($scope,$rootScope) {
         $scope.emps=[

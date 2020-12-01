@@ -1,5 +1,6 @@
 
-<md-dialog aria-label="Mango (Fruit)" style="width: 600px;height: 61%; text-align: center" id="left">
+<div class="animated {{hidethis}}" style="display: {{disp}}">
+<md-dialog aria-label="Mango (Fruit)" style="width: 600px;height: 61%; text-align: center" id="close">
     <form ng-cloak>
         <md-toolbar>
             <div class="md-toolbar-tools">
@@ -8,7 +9,7 @@
 
                 </h2>
                 <span flex></span>
-                <md-button class="md-icon-button" ng-click="cancel()">
+                <md-button class="md-icon-button openFrom" ng-click="cancel()">
                     <md-icon md-svg-src="img/2.jpg" aria-label="Close dialog"></md-icon>
                 </md-button>
             </div>
@@ -69,7 +70,7 @@
 
 
                 </div>
-                <md-button class="md-primary md-raised" ng-click="Cart()" style="display: inline; background-color: #360eff;margin-top: -13px;margin-left: 50%">Order Now</md-button>
+                <md-button  class="md-primary md-raised" ng-click="Cart()" style="display: inline; background-color: #360eff;margin-top: -13px;margin-left: 50%">Order Now</md-button>
 
             </div>
             <md-dialog>
@@ -77,4 +78,4 @@
         </md-dialog-content>
     </form>
 </md-dialog>
-
+</div>

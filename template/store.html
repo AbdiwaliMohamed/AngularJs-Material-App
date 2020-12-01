@@ -19,7 +19,7 @@
     </div>
 
     <!-- Hoverable -->
-    <div class="container-fluid" style="margin-top: 30px">
+    <div class="container-fluid" style="margin-top: 30px" id="store">
         <div class="row">
             <div class="col-md-2"  ng-init="collection='block';fashion='none';footwear='none';electronics='none'">
                 <h1 style="text-align: center; font-weight: bold">Filter Products</h1>
@@ -305,7 +305,8 @@
 
             <div class="col-md-10">
                             <h1 style="text-align: center; font-weight: bold">Our Products</h1>
-                            <!-- Classic tabs -->
+
+                <!-- Classic tabs -->
                             <!-- Classic tabs -->
                             <div class="classic-tabs">
 
@@ -368,8 +369,8 @@
                                                         </p>
                                                         <!-- Text -->
                                                         <!-- Button -->
-                                                        <md-button class="md-primary md-raised" ng-click="showAdvanced($event,Collection)" style="display: inline; background-color: tomato">Description</md-button>
-                                                        <md-button class="md-primary md-raised" ng-click="showAdvanced($event,Collection)" style="display: inline">Buy Now</md-button>
+                                                        <md-button class="md-primary md-raised" ng-click="disp='block';showAdvanced($event,Collection)" style="display: inline; background-color: tomato">Description</md-button>
+                                                        <md-button class="md-primary md-raised"  ng-click="Cart()" style="display: inline">Buy Now</md-button>
 
 
                                                     </div>
@@ -498,8 +499,8 @@
                                                         <span class="fa fa-star"></span>
                                                         <!-- Text -->
                                                         <!-- Button -->
-                                                        <md-button class="md-primary md-raised" ng-click="showAdvanced($event,mobile)" style="display: inline; background-color: tomato">Description</md-button>
-                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                                        <md-button class="md-primary md-raised openFrom" ng-click="showAdvanced($event,mobile)" style="display: inline; background-color: tomato">Description</md-button>
+                                                        <a href="#" class="btn btn-primary"  ng-click="cancel()">Buy Now</a>
 
                                                     </div>
 
